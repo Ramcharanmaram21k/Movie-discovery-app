@@ -1,18 +1,50 @@
 .watchlist-container {
-  padding: 40px 60px;
-}
-
-.watchlist-title {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-  text-align: center;
+  background-color: #000;
+  min-height: 100vh;
+  padding: 30px;
   color: #fff;
 }
 
-.empty-watchlist-message {
-  color: #a0a0a0;
-  font-size: 1.2rem;
+.watchlist-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.watchlist-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.watchlist-subtitle {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.empty-watchlist {
   text-align: center;
   margin-top: 50px;
+}
+
+.empty-watchlist-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.empty-watchlist-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.empty-watchlist-message {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.browse-movies-btn {
+  background-color: #e50914;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }

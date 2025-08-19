@@ -1,54 +1,64 @@
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background-color: #181818;
-  border-bottom: 1px solid #2a2a2a;
+  justify-content: space-between;
+  background: #111;
+  padding: 10px 20px;
+  color: #fff;
 }
 
+/* Left: Logo */
 .header-logo-link {
   text-decoration: none;
 }
 
 .header-title {
-  font-family: 'Bebas Neue', sans-serif; /* Use the new font */
-  color: #e50914; /* Netflix Red */
-  font-size: 2.5rem;
-  font-weight: 400; /* Bebas Neue is already bold */
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  /* Subtle 3D shadow effect */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  transition: transform 0.2s ease-in-out;
+  font-size: 22px;
+  font-weight: bold;
+  color: #a855f7;
 }
 
-.header-title:hover {
-    transform: scale(1.05);
-}
-
+/* Center: Search */
 .search-input-container {
+  display: flex;
+  align-items: center;
+  flex: 1;                 /* allow it to expand */
+  max-width: 600px;        /* same as YouTube */
+  margin: 0 40px;          /* spacing between logo & watchlist */
   position: relative;
 }
 
 .search-input {
-  background-color: #333;
+  width: 100%;
+  padding: 8px 12px 8px 36px;
+  border: none;
+  border-radius: 2px;
+  background: #222;
   color: #fff;
-  border: 1px solid #444;
-  border-radius: 25px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  width: 250px;
+  font-size: 14px;
   outline: none;
-  transition: all 0.3s ease;
 }
 
-.search-input:focus {
-  border-color: #e50914;
-  box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+.search-icon {
+  position: absolute;
+  left: 12px;
+  font-size: 16px;
+  color: #aaa;
 }
 
-.search-input::placeholder {
-  color: #888;
+/* Right: Watchlist */
+.watchlist-nav {
+  display: flex;
+  align-items: center;
 }
+
+.watchlist-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.watchlist-link:hover {
+  color: #a855f7;
+}
+
