@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Home from './components/Home';
+import MovieDetails from './components/MovieDetails'; // 1. Import MovieDetails
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        {/* 2. Use Routes instead of Switch */}
+        <Routes> 
+          {/* 3. Use the element prop instead of component */}
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/movie-details/:id" element={<MovieDetails />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
