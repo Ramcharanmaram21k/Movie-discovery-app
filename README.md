@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+🎬 Movie Discovery App
+
+A simple and interactive movie discovery platform built with React that lets users explore movies, search by title, and maintain a personal Watchlist.
+Movie data is fetched in real-time using the TMDB (The Movie Database) API
+.
+
+✨ Features
+
+🔎 Search Movies – Find movies instantly by typing in the search bar.
+
+🎭 Category Filters – Browse popular, action, comedy, and drama movies.
+
+❤️ Watchlist – Add or remove movies from your personal watchlist.
+
+📊 Movie Ratings – See IMDB-like ratings (fetched from TMDB).
+
+🎨 Modern UI – Clean, dark-themed interface with responsive design.
+
+🛠️ Tech Stack
+
+Frontend: React, CSS (or Tailwind if you used it)
+
+API: TMDB API
+
+Version Control: Git + GitHub
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
