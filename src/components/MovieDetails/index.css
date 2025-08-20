@@ -112,3 +112,29 @@
   height: 50px;
   border-radius: 8px;
 }
+
+
+/* ===== Mobile (Movie Details) ===== */
+@media (max-width: 600px) {
+  .movie-details {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+  }
+
+  .movie-details img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+  }
+
+  .movie-details-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .movie-details-overview {
+    font-size: 14px;
+    text-align: justify;
+  }
+}

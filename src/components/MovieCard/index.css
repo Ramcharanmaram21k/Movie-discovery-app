@@ -72,3 +72,15 @@
 .watchlist-btn.in-watchlist {
   background: #e50914;
 }
+
+
+@media (max-width: 600px) {
+  .movie-card {
+    font-size: 14px;
+  }
+
+  .movie-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
